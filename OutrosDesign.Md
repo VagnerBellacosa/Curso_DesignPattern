@@ -2,132 +2,139 @@
 
 ## Outros Design Patterns
 
-- Padrıes arquiteturais
-	- Interceptor
-	- Mvc (Model View Controler)
-	- Mvvm (Model View ViewModel)
-	- Mvp (Model View Presenter)
-	- n-tier (Arquitetura multicamada)
-	- Specification
-	- Publishñsubscribe
-	- Inversion of control (Invers„o de controle)
-	- Dependency Injection (InjeÁ„o de dependÍncia)
-	- Intercepting filter
-	- Lazy loading
-	- Mock object (objeto mock)
-	- Method chaining
-	- Unit of work
-	- Delegation
+- Padr√µes arquiteturais
+  - Interceptor
+  - Mvc (Model View Controler)
+  - Mvvm (Model View ViewModel)
+  - Mvp (Model View Presenter)
+  - n-tier (Arquitetura multicamada)
+  - Specification
+  - PublishÔøΩsubscribe
+  - Inversion of control (Invers√£o de controle)
+  - Dependency Injection (Inje√ß√£o de depend√™ncia)
+  - Intercepting filter
+  - Lazy loading
+  - Mock object (objeto mock)
+  - Method chaining
+  - Unit of work
+  - Delegation
 
-## Padrıes
+## Padr√µes
 
-Os padrıes GRASP, sigla para General Responsibility Assignment Software Patterns (or Principles), consistem de um conjunto de pr·ticas para atribuiÁ„o de responsabilidades a classes e objetos em projetos orientados a objeto.
+Os padr√µes GRASP, sigla para General Responsibility Assignment Software Patterns (or Principles), consistem de um conjunto de pr√°ticas para atribui√ß√£o de responsabilidades a classes e objetos em projetos orientados a objeto.
 
-Os padrıes GRASP (General Responsibility Assignment Software Patterns), s„o respons·veis pela descriÁ„o de princÌpios de fundamental import‚ncia para a atribuiÁ„o de responsabilidades em projetos orientados a objetos, oferecendo um melhor desempenho do cÛdigo, e trabalhando acerca de solucionar problemas, garantindo melhor interface do projeto.
+Os padr√µes GRASP (General Responsibility Assignment Software Patterns), s√£o respons√°veis pela descri√ß√£o de princ√≠pios de fundamental import√¢ncia para a atribui√ß√£o de responsabilidades em projetos orientados a objetos, oferecendo um melhor desempenho do c√≥digo, e trabalhando acerca de solucionar problemas, garantindo melhor interface do projeto.
 
-Sendo assim, È importante sabermos que a qualidade do projeto orientado a objetos est· diretamente relacionada com a distribuiÁ„o dessas obrigaÁıes, que promovem a n„o sobrecarga de objetos j· que ocorre nesse processo a delegaÁ„o de atividades, ou seja, cada objeto ter· uma funÁ„o especÌfica, de modo que, o que ele n„o souber fazer ser· repassado para o objeto que est· mais preparado para fazer.
+Sendo assim, √© importante sabermos que a qualidade do projeto orientado a objetos est√° diretamente relacionada com a distribui√ß√£o dessas obriga√ß√µes, que promovem a n√£o sobrecarga de objetos j√° que ocorre nesse processo a delega√ß√£o de atividades, ou seja, cada objeto ter√° uma fun√ß√£o espec√≠fica, de modo que, o que ele n√£o souber fazer ser√° repassado para o objeto que est√° mais preparado para fazer.
 
-Todos esses padrıes servem para a resoluÁ„o de problemas comuns e bastante tÌpicos de desenvolvimento de software orientado a objeto. Portanto, tais tÈcnicas apenas documentam e normatizam as pr·ticas j· consolidadas, testadas e conhecidas no mercado.
+Todos esses padr√µes servem para a resolu√ß√£o de problemas comuns e bastante t√≥picos de desenvolvimento de software orientado a objeto. Portanto, tais t√©cnicas apenas documentam e normatizam as pr√°ticas j√° consolidadas, testadas e conhecidas no mercado.
 
-Os padrıes GRASP est„o mais como uma ferramenta mental ou uma filosofia de design, mas que ainda assim s„o ˙teis para o aprendizado e desenvolvimento de um bom design de software. Note que alguns padrıes GoF implementam soluÁıes correspondentes com padrıes GRASP.
+Os padr√µes GRASP est√£o mais como uma ferramenta mental ou uma filosofia de design, mas que ainda assim s√£o √∫teis para o aprendizado e desenvolvimento de um bom design de software. Note que alguns padr√µes GoF implementam solu√ß√µes correspondentes com padr√µes GRASP.
 
-## Tipos de Padrıes Grasp
+## Tipos de Padr√µes Grasp
 
-Dentro do GRASP podemos encontrar v·rios padrıes relacionados aqueles de car·ter b·sicos e avanÁados.
+Dentro do GRASP podemos encontrar v√°rios padr√µes relacionados aqueles de car√°ter b√°sicos e avan√ßados.
 
-- Padrıes B·sicos:
-	- Information Expert (ver Especialista na InformaÁ„o);
-	- Creator (ver Factory Method);
-	- High Cohesion (ver Coes„o);
-	- Low Coupling(ver Acoplamento);
-	- Controller(ver Model-view-controller).
-- Padrıes AvanÁados:
-	- Polymorphism (ver Polimorfismo);
-	- Pure Fabrication;
-	- Indirection (ver IndireÁ„o);
-	- Protected Variations (ver VariaÁıes Protegidas).
-	- Information Expert
+- Padr√µes B√°sicos:
+  - Information Expert (ver Especialista na Informa√ß√£o);
+  - Creator (ver Factory Method);
+  - High Cohesion (ver Coes√£o);
+  - Low Coupling(ver Acoplamento);
+  - Controller(ver Model-view-controller).
 
+- Padr√µes Avan√ßados:
+  - Polymorphism (ver Polimorfismo);
+  - Pure Fabrication;
+  - Indirection (ver Indire√ß√£o);
+  - Protected Variations (ver Varia√ß√µes Protegidas).
+  - Information Expert
 
- | O que È?	| PossÌveis Problemas	| SoluÁ„o	| BenefÌcios | 
- | … conhecido por ser o princÌpio fundamental para atribuir responsabilidade.	| Qual È o princÌpio geral para a atribuiÁ„o de responsabilidades aos objetos?	| Atribua a responsabilidade ao especialista: a classe que tem as informaÁıes necess·rias para assumir a responsabilidade.	|  
- | Encapsulamento È mantido;  | 
- | Fraco acoplamento (facilidade de manutenÁ„o); | 
- | Alta coes„o (objetos fazem tudo relacionado ‡ sua prÛpria informaÁ„o). | 
- 
- ### Creator
+ | O que √©? | Poss√≠veis Problemas | Solu√ß√£o | Benef√≠cios |
+ | ---  | --- | --- | --- |
+ | √â conhecido por ser o princ√≠pio fundamental para atribuir responsabilidade. | Qual √© o princ√≠pio geral para a atribui√ß√£o de responsabilidades aos objetos? | Atribua a responsabilidade ao especialista: a classe que tem as informa√ß√µes necess√≠rias para assumir a responsabilidade. |  
+ | Encapsulamento √© mantido;  |
+ | Fraco acoplamento (facilidade de manuten√ß√£o); |
+ | Alta coes√£o (objetos fazem tudo relacionado √© sua pr√≥pria informa√ß√£o). |
 
- | O que È?	| PossÌveis Problemas	| SoluÁ„o	| BenefÌcios  | 
- | … uma das atividades mais comuns em um sistema de orientaÁ„o a objetos. Atribui qual classe È respons·vel por criar os objetos.	| Quem deve ser respons·vel por criar uma nova inst‚ncia de uma classe?	| Atribua ‡ classe a responsabilidade de criar uma inst‚ncia da outra classe.	| Facilidade no desenvolvimento do projeto e compreens„o. | 
- 
- ### High Cohesion
+### Creator
 
- | O que È?	| PossÌveis Problemas	| SoluÁ„o	| BenefÌcios | 
- | … um padr„o avaliativo que tenta manter os objetos adequadamente focado, gerenciado e compreensÌvel.	| Como manter a complexidade sob controle?  | 
- | Classes que fazem muitas tarefas n„o relacionadas s„o: | 
- |  Mais difÌceis de entender; | 
- | Mais difÌceis de manter e de reusar; | 
- | S„o mais vulner·veis ‡ mudanÁa. | 
- | Atribuir uma responsabilidade para que a coes„o se mantenha alta.	| 
- | Melhor claridade e facilidade de compreens„o do projeto; | 
- | SimplificaÁ„o da manutenÁ„o; | 
+ | O que √©? | Poss√≠veis Problemas | Solu√ß√£o | Benef√≠cios  |
+ | ---  | --- | --- | --- |
+ | √â uma das atividades mais comuns em um sistema de orienta√ß√£o a objetos. Atribui qual classe √© respons√°vel por criar os objetos. | Quem deve ser respons√°vel por criar uma nova inst√¢ncia de uma classe? | Atribua √† classe a responsabilidade de criar uma inst√¢ncia da outra classe. | Facilidade no desenvolvimento do projeto e compreens√£o. |
+
+### High Cohesion
+
+ | O que √©? | Poss√≠veis Problemas | Solu√ß√£o | Benef√≠cios |
+ | ---  | --- | --- | --- |
+ | √â um padr√£o avaliativo que tenta manter os objetos adequadamente focado, gerenciado e compreens√°vel. | Como manter a complexidade sob controle?  |
+ | Classes que fazem muitas tarefas n√£o relacionadas s√£o: |
+ |  Mais dif√≠ceis de entender; |
+ | Mais dif√≠ceis de manter e de reusar; |
+ | s√£o mais vulner√°veis √† mudan√ßa. |
+ | Atribuir uma responsabilidade para que a coes√£o se mantenha alta. |
+ | Melhor claridade e facilidade de compreens√£o do projeto; |
+ | Simplifica√ß√£o da manuten√ß√£o; |
 
 ### Low Coupling
 
- | O que È?	| PossÌveis Problemas	| SoluÁ„o	| BenefÌcios | 
- | … um padr„o de avaliaÁ„o, que determina como atribuir responsabilidades para apoiar.	| Como prover baixa dependÍncia entre classes, reduzir o impacto de mudanÁas e obter alta reutilizaÁ„o?	| Atribui as responsabilidades de modo que o acoplamento entre classes permaneÁa baixo.	|  
- | Menor dependÍncia entre as classes; | 
- | Mudar de uma classe que tem menor impacto sobre outras classes; | 
- | Maior potencial de reutilizaÁ„o. | 
+ | O que √©? | Poss√≠veis Problemas | Solu√ß√£o | Benef√≠cios |
+ | ---  | --- | --- | --- |
+ | √â um padr√£o de avalia√ß√£o, que determina como atribuir responsabilidades para apoiar. | Como prover baixa depend√¢ncia entre classes, reduzir o impacto de mudan√ßas e obter alta reutiliza√ß√£o? | Atribui as responsabilidades de modo que o acoplamento entre classes permane√ßa baixo. |  
+ | Menor depend√¢ncia entre as classes; |
+ | Mudar de uma classe que tem menor impacto sobre outras classes; |
+ | Maior potencial de reutiliza√ß√£o. |
 
 ### Controller
 
- | O que È?	| PossÌveis Problemas	| SoluÁ„o	| BenefÌcios | 
- | O padr„o controlador atribui a responsabilidade de lidar com os eventos do sistema para uma classe que representa a um cen·rio de caso de uso do sistema global.	| Quem deve ser o respons·vel por lidar com um evento de uma interface de entrada?	| Atribuir responsabilidades para receber ou lidar com um evento do sistema para: | 
- | Uma classe que representa todo o sistema ou subsistema; | 
- | Uma classe que representa cen·rio de caso de uso (controlador de caso de uso ou de sess„o). | 
- | Diminui a sensibilidade da camada de apresentaÁ„o em relaÁ„o ‡ lÛgica de domÌnio; | 
- | Oportunidade para controlar o estado do caso de uso; | 
+ | O que √©? | Poss√≠veis Problemas | Solu√ß√£o | Benef√≠cios |
+ | ---  | --- | --- | --- |
+ | O padr√£o controlador atribui a responsabilidade de lidar com os eventos do sistema para uma classe que representa a um cen√°rio de caso de uso do sistema global. | Quem deve ser o respons√°vel por lidar com um evento de uma interface de entrada? | Atribuir responsabilidades para receber ou lidar com um evento do sistema para: |
+ | Uma classe que representa todo o sistema ou subsistema; |
+ | Uma classe que representa cen√°rio de caso de uso (controlador de caso de uso ou de sess√≠o). |
+ | Diminui a sensibilidade da camada de apresenta√ß√£o em rela√ß√£o √† l√≥gica de dom√≠nio; |
+ | Oportunidade para controlar o estado do caso de uso; |
 
 ### Polymorphism
 
- | O que È?	| PossÌveis problemas	| SoluÁıes	| BenefÌcios | 
- | … um princÌpio, no qual subclasses de uma superclasse s„o capazes de invocar mÈtodos, que comportam-se de maneira diferente para cada classe derivada	| Como tratar alternativas baseadas no tipo? Como criar componentes de software ìplug·veisî?	| … aconselh·vel atribuir responsabilidades aos tipos usando operaÁıes polimÛrficas, isso quando alternativas ou comportamento relacionados variam com o tipo(classe).	| Facilita a manutenÁ„o e inserÁ„o de um novo tipo de classe | 
-
+ | O que √©? | Poss√≠veis problemas | Solu√ß√µes | Benef√≠cios |
+ | ---  | --- | --- | --- |
+ | √â um princ√≠pio, no qual subclasses de uma superclasse s√£o capazes de invocar m√©todos, que comportam-se de maneira diferente para cada classe derivada | Como tratar alternativas baseadas no tipo? Como criar componentes de software ÔøΩplug√°veisÔøΩ ? | √â aconselh√°vel atribuir responsabilidades aos tipos usando opera√ß√µes polim√≥rficas, isso quando alternativas ou comportamento relacionados variam com o tipo(classe). | Facilita a manuten√ß√£o e inser√ß√£o de um novo tipo de classe |
 
 ### Pure Fabrication
 
- | O que È?	| PossÌveis Problemas	| SoluÁ„o	| BenefÌcios | 
- | … uma classe que n„o representa um conceito no domÌnio do problema deve atender as seguintes caracterÌsticas : baixo acoplamento e potencial de reutilizaÁ„o dos mesmos derivados.	| Quando n„o se quer violar ìAlta Coes„oîe ìBaixo Acoplamentoî e o ìExpertîn„o oferece soluÁıes apropriadas que objeto deve ter responsabilidade?	| Criar classes artificiais de baixa coes„o e alto acoplamento(classes puras).	| Apresenta vantagens como a criaÁ„o de classes muito coesas e remove caracterÌsticas n„o coesas das classes de domÌnios de negÛcios. | 
+ | O que √©? | Poss√≠veis Problemas | Solu√ß√£o | Benef√≠cios |
+ | ---  | --- | --- | --- |
+ | √â uma classe que n√£o representa um conceito no dom√≠nio do problema deve atender as seguintes caracter√≠sticas : baixo acoplamento e potencial de reutiliza√ß√£o dos mesmos derivados. | Quando n√£o se quer violar ÔøΩAlta Coes√£oÔøΩ e ÔøΩBaixo AcoplamentoÔøΩ e o ÔøΩExpertÔøΩ n√£o oferece solu√ß√µes apropriadas que objeto deve ter responsabilidade? | Criar classes artificiais de baixa coes√£o e alto acoplamento(classes puras). | Apresenta vantagens como a cria√ß√£o de classes muito coesas e remove caracter√≠sticas n√£o coesas das classes de dom√≠nios de neg√≠cios. |
 
 ### Indirection
 
- | O que È?	| PossÌveis Problemas	| SoluÁ„o	| BenefÌcios | 
- | Suporta baixo acoplamento(e reusa potencial)entre dois elementos, atribuindo a responsabilidade de mediaÁ„o entre eles a um objeto intermedi·rio.	| Como evitar acoplamento direto entre duas ou mais classes?Como evitar baixo acoplamento e manter alta possibilidade de reuso atravÈs do desacoplamento de objetos?	| A um objeto intermedi·rio que faz mediaÁ„o entre componentes e serviÁos de modo que esses n„o sejam diretamente acoplados ser· atribuÌda a responsabilidade.	| Visa atribuir responsabilidades, de modo que, olha para determinada responsabilidade determinando assim, as informaÁıes necess·rias para cumpri-la e, consecutivamente, determina o local de armazenamento dessa informaÁ„o. | 
+ | O que √©? | Poss√≠veis Problemas | Solu√ß√£o | Benef√≠cios |
+ | ---  | --- | --- | --- |
+ | Suporta baixo acoplamento(e reusa potencial)entre dois elementos, atribuindo a responsabilidade de media√ß√£o entre eles a um objeto intermedi√°rio. | Como evitar acoplamento direto entre duas ou mais classes?Como evitar baixo acoplamento e manter alta possibilidade de reuso atrav√©s do desacoplamento de objetos? | A um objeto intermedi√°rio que faz media√ß√£o entre componentes e servi√£os de modo que esses n√£o sejam diretamente acoplados ser√° atribu√≠da a responsabilidade. | Visa atribuir responsabilidades, de modo que, olha para determinada responsabilidade determinando assim, as informa√ß√µes necess√≠rias para cumpri-la e, consecutivamente, determina o local de armazenamento dessa informa√ß√£o. |
 
 ### Protected Variations
 
- | O que È?	| PossÌveis Problemas	| SoluÁ„o	| BenefÌcios | 
- | … um princÌpio b·sico na motivaÁ„o de grande parte dos mecanismos e padrıes na programaÁ„o e no projeto, para fornecer flexibilidade e proteÁ„o contra variaÁıes.	| Como projetar objetos,subsistemas e sistemas, de modo que, as variaÁıes ou instabilidades nesses elementos n„o sejam respons·veis por impactos indesej·veis em outros elementos?	|   
- | Identificar pontos de variaÁ„o e atribuir responsabilidades para criar uma interface est·vel em volta desses pontos; | 
- | Evitar o envio de mensagens a objetos muito distantes. | 
- | Promove a contenÁ„o de variaÁıes e instabilidades, durante o projeto de objetos e sistemas, para que n„o ocorra a expans„o de impactos a outros elementos. | 
+ | O que √©? | Poss√≠veis Problemas | Solu√ß√£o | Benef√≠cios |
+ | ---  | --- | --- | --- |
+ | √â um princ√≠pio b√°sico na motiva√ß√£o de grande parte dos mecanismos e padr√µes na programa√ß√£o e no projeto, para fornecer flexibilidade e prote√ß√£o contra varia√ß√µes. | Como projetar objetos,subsistemas e sistemas, de modo que, as varia√ß√µes ou instabilidades nesses elementos n√£o sejam respons√°veis por impactos indesej√°veis em outros elementos? |
+ | Identificar pontos de varia√ß√£o e atribuir responsabilidades para criar uma interface est√°vel em volta desses pontos; |
+ | Evitar o envio de mensagens a objetos muito distantes. |
+ | Promove a conten√ß√£o de varia√ß√µes e instabilidades, durante o projeto de objetos e sistemas, para que n√£o ocorra a expans√£o de impactos a outros elementos. |
 
-## CrÌticas
+## CrÔøΩticas
 
-Segundo alguns usu·rios, alguns "padrıes de projeto" s„o apenas evidÍncias de que alguns recursos est„o ausentes em uma determinada linguagem de programaÁ„o (Java ou C++ por exemplo). Nesta linha, Peter Norvig demonstra que 16 dos 23 padrıes do livro 'Design Patterns' s„o simplificados ou eliminados nas linguagens Lisp ou Dylan, usando os recursos diretos destas linguagens.[9]
+Segundo alguns usu√°rios, alguns "padr√µes de projeto" s√£o apenas evid√™ncias de que alguns recursos est√£o ausentes em uma determinada linguagem de programa√ß√£o (Java ou C++ por exemplo). Nesta linha, Peter Norvig demonstra que 16 dos 23 padr√µes do livro 'Design Patterns' s√£o simplificados ou eliminados nas linguagens Lisp ou Dylan, usando os recursos diretos destas linguagens.[9]
 
-Segundo outros, excessos nas tentativas de fazer o cÛdigo se conformar aos 'Padrıes de Projeto' aumentam desnecessariamente a sua complexidade.[10]
+Segundo outros, excessos nas tentativas de fazer o c√≥digo se conformar aos 'Padr√µes de Projeto' aumentam desnecessariamente a sua complexidade.[10]
 
-### Bibliografia 
+### Bibliografia
 
 - Christopher Alexander (1964). Notes on the Synthesis of Form. Estados Unidos: Harvard University Press. ISBN 0-674-62751-2
 - Christopher Alexander (1979). The Timeless Way of Building. Estados Unidos: Oxford University Press. ISBN 0-19-502402-8
 - Christopher Alexander (1977). A Pattern Language. Estados Unidos: Oxford University Press. ISBN 0-19-501919-9
 - Craig Larman (2004). Applying UML and Patterns. An Introduction to Object-Oriented Analysis and Design and Iterative Development 1 ed. Estados Unidos: Prentice Hall. p. 736. ISBN 0-13-148906-2
 - Gregor Hohpe, Bobby Woolf (2004). Enterprise Integration Patterns. Designing, Building, And Deploying Messaging Solutions 1 ed. Estados Unidos: Addinson-Wesley. p. 659. ISBN 0-321-20068-3
-- Pablo Dall'Oglio (2007). PHP Programando com OrientaÁ„o a Objetos. Inclui Design Patterns 1 ed. S„o Paulo: Novatec. p. 576. ISBN 978-85-7522-137-2
-- Alexandre Altair de Melo e Mauricio G. F. Nascimento (2007). PHP Profissional. Aprenda a desenvolver sistemas profissionais orientados a objetos com padrıes de projeto 1 ed. S„o Paulo: Novatec. p. 464. ISBN 978-85-7522-141-9
-
+- Pablo Dall'Oglio (2007). PHP Programando com Orienta√ß√£o a Objetos. Inclui Design Patterns 1 ed. s√£o Paulo: Novatec. p. 576. ISBN 978-85-7522-137-2
+- Alexandre Altair de Melo e Mauricio G. F. Nascimento (2007). PHP Profissional. Aprenda a desenvolver sistemas profissionais orientados a objetos com padr√µes de projeto 1 ed. s√£o Paulo: Novatec. p. 464. ISBN 978-85-7522-141-9
 
 [Artigo original](https://pt.wikipedia.org/wiki/Padr%C3%A3o_de_projeto_de_software)

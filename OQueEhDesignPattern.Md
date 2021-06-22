@@ -1,113 +1,116 @@
 # Design Pattern
 
-## Padr„o de projeto de software
+## Padr√£o de projeto de software
 
-Em Engenharia de Software, um padr„o de desenho (portuguÍs europeu) ou padr„o de projeto (portuguÍs brasileiro) (do inglÍs **design pattern**) È uma soluÁ„o geral para um problema que ocorre com frequÍncia dentro de um determinado contexto no projeto de software. Um padr„o de projeto n„o È um projeto finalizado que pode ser diretamente transformado em cÛdigo fonte ou de m·quina, ele È uma descriÁ„o ou modelo (template) de como resolver um problema que pode ser usado em muitas situaÁıes diferentes. Padrıes s„o melhores pr·ticas formalizadas que o programador pode usar para resolver problemas comuns quando projetar uma aplicaÁ„o ou sistema. Padrıes de projeto orientados a objeto normalmente mostram relacionamentos e interaÁıes entre classes ou objetos, sem especificar as classes ou objetos da aplicaÁ„o final que est„o envolvidas. Padrıes que implicam *orientaÁ„o a objetos* ou estado mut·vel mais geral, n„o s„o t„o aplic·veis em *linguagens de programaÁ„o funcional*.
+Em Engenharia de Software, um padr√£o de desenho (portugues europeu) ou padr√£o de projeto (portugues brasileiro) (do ingles **design pattern**) √© uma solu√ß√£o geral para um problema que ocorre com frequencia dentro de um determinado contexto no projeto de software. Um padr√£o de projeto n√£o √© um projeto finalizado que pode ser diretamente transformado em c√≥digo fonte ou de m√°quina, ele √© uma descri√ß√£o ou modelo (template) de como resolver um problema que pode ser usado em muitas situa√ß√µes diferentes. padr√µes s√£o melhores pr√°ticas formalizadas que o programador pode usar para resolver problemas comuns quando projetar uma aplica√ß√£o ou sistema. padr√µes de projeto orientados a objeto normalmente mostram relacionamentos e intera√ß√µes entre classes ou objetos, sem especificar as classes ou objetos da aplica√ß√£o final que est√£o envolvidas. padr√µes que implicam *orienta√ß√£o a objetos* ou estado mut√°vel mais geral, n√£o s√£o t√£o aplic√°veis em *linguagens de programa√ß√£o funcional*.
 
-Padrıes de projeto residem no domÌnio de mÛdulos e interconexıes. Em um nÌvel mais alto h· padrıes arquiteturais que s„o maiores em escopo, usualmente descrevendo um padr„o global seguido por um sistema inteiro.[1]
+Padr√µes de projeto residem no dom√≠nio de m√≥dulos e interconex√µes. Em um n√≠vel mais alto h√° padr√µes arquiteturais que s√£o maiores em escopo, usualmente descrevendo um padr√£o global seguido por um sistema inteiro.[1]
 
-As caracterÌsticas obrigatÛrias que devem ser atendidas por um padr„o de projeto È composto basicamente por 4 (quatro) elementos que s„o:
+As caracter√≠sticas obrigat√≥rias que devem ser atendidas por um padr√£o de projeto √© composto basicamente por 4 (quatro) elementos que s√£o:
 
 ...
-- Nome do padr„o;
+
+- Nome do padr√£o;
 - Problema a ser resolvido;
-- SoluÁ„o dada pelo padr„o; e
-- ConsequÍncias.
-- Os padrıes de projeto:
+- Solu√ß√£o dada pelo padr√£o; e
+- Consequencias.
+- Os padr√µes de projeto:
 ...
 
-- visam facilitar a reutilizaÁ„o de soluÁıes de desenho - isto È, soluÁıes na fase de projeto do software 
-- eestabelecem um vocabul·rio comum de desenho, facilitando comunicaÁ„o, documentaÁ„o e aprendizado dos sistemas de software.
+- visam facilitar a reutiliza√ß√£o de solu√ß√µes de desenho - isto √©, solu√ß√µes na fase de projeto do software
+- estabelecem um vocabul√°rio comum de desenho, facilitando comunica√ß√£o, documenta√ß√£o e aprendizado dos sistemas de software.
 
-## HistÛria
-O arquiteto Christopher Alexander, em seus livros (1977/1979) Notes on the Synthesis of Form, The Timeless Way of Building e A Pattern Language, estabelece que um padr„o deve ter, idealmente, as seguintes caracterÌsticas:
+## HistÔøΩria
 
-- **Encapsulamento:** um padr„o encapsula um problema ou soluÁ„o bem definida. Ele deve ser independente, especÌfico e formulado de maneira a ficar claro onde ele se aplica.
-- **Generalidade:** todo padr„o deve permitir a construÁ„o de outras realizaÁıes a partir deste padr„o.
-- **EquilÌbrio:** quando um padr„o È utilizado em uma aplicaÁ„o, o equilÌbrio d· a raz„o, relacionada com cada uma das restriÁıes envolvidas, para cada passo do projeto. Uma an·lise racional que envolva uma abstraÁ„o de dados empÌricos, uma observaÁ„o da aplicaÁ„o de padrıes em artefatos tradicionais, uma sÈrie convincente de exemplos e uma an·lise de soluÁıes ruins ou fracassadas pode ser a forma de encontrar este equilÌbrio.
-- **AbstraÁ„o:** os padrıes representam abstraÁıes da experiÍncia empÌrica ou do conhecimento cotidiano.
-- **Abertura:** um padr„o deve permitir a sua extens„o para nÌveis mais baixos de detalhe.
-- **Combinatoriedade:** os padrıes s„o relacionados hierarquicamente. Padrıes de alto nÌvel podem ser compostos ou relacionados com padrıes que endereÁam problemas de nÌvel mais baixo.
+O arquiteto Christopher Alexander, em seus livros (1977/1979) Notes on the Synthesis of Form, The Timeless Way of Building e A Pattern Language, estabelece que um padr√£o deve ter, idealmente, as seguintes caracter√≠sticas:
 
-AlÈm da definiÁ„o das caracterÌsticas de um padr„o, Alexander definiu o formato que a descriÁ„o de um padr„o deve ter. Ele estabeleceu que um padr„o deve ser descrito em cinco partes:
+- **Encapsulamento:** um padr√£o encapsula um problema ou solu√ß√£o bem definida. Ele deve ser independente, espec√≠fico e formulado de maneira a ficar claro onde ele se aplica.
+- **Generalidade:** todo padr√£o deve permitir a constru√ß√£o de outras realiza√ß√µes a partir deste padr√£o.
+- **Equil√≠brio:** quando um padr√£o √© utilizado em uma aplica√ß√£o, o equil√≠brio d√° a raz√£o, relacionada com cada uma das restri√ß√µes envolvidas, para cada passo do projeto. Uma an√°lise racional que envolva uma abstra√ß√£o de dados emp√≠ricos, uma observa√ß√£o da aplica√ß√£o de padr√µes em artefatos tradicionais, uma s√©rie convincente de exemplos e uma an√°lise de solu√ß√µes ruins ou fracassadas pode ser a forma de encontrar este equilibrio.
+- **Abstra√ß√£o:** os padr√µes representam abstra√ß√µes da experi√™ncia empirica ou do conhecimento cotidiano.
+- **Abertura:** um padr√£o deve permitir a sua extens√£o para n√≠veis mais baixos de detalhe.
+- **Combinatoriedade:** os padr√µes s√£o relacionados hierarquicamente. padr√µes de alto n√≠vel podem ser compostos ou relacionados com padr√µes que endere√ßam problemas de n√≠vel mais baixo.
 
-- **Nome:** uma descriÁ„o da soluÁ„o, mais do que do problema ou do contexto;
-- **Exemplo:** uma ou mais figuras, diagramas ou descriÁıes que ilustrem um protÛtipo de aplicaÁ„o;
-- **Contexto:** a descriÁ„o das situaÁıes sob as quais o padr„o se aplica;
-- **Problema:** uma descriÁ„o das forÁas e restriÁıes envolvidos e como elas interagem;
-- **SoluÁ„o:** relacionamentos est·ticos e regras din‚micas descrevendo como construir artefatos de acordo com o padr„o, frequentemente citando variaÁıes e formas de ajustar a soluÁ„o segundo as circunst‚ncias. Inclui referÍncias a outras soluÁıes e o relacionamento com outros padrıes de nÌvel mais baixo ou mais alto.
+Al√©m da defini√ß√£o das caracter√≠sticas de um padr√£o, Alexander definiu o formato que a descri√ß√£o de um padr√£o deve ter. Ele estabeleceu que um padr√£o deve ser descrito em cinco partes:
 
-Os patterns de Alexander procuravam prover uma fonte de ideias provadas para indivÌduos e comunidades para serem usadas em construÁıes, mostrando assim o quanto belo, confort·vel e flexÌvel os ambientes podem ser construÌdos.
+- **Nome:** uma descri√ß√£o da solu√ß√£o, mais do que do problema ou do contexto;
+- **Exemplo:** uma ou mais figuras, diagramas ou descri√ß√µes que ilustrem um prot√≥tipo de aplica√ß√£o;
+- **Contexto:** a descri√ß√£o das situa√ß√µes sob as quais o padr√£o se aplica;
+- **Problema:** uma descri√ß√£o das for√ßas e restri√ß√µes envolvidos e como elas interagem;
+- **Solu√ß√£o:** relacionamentos est√°ticos e regras din√¢micas descrevendo como construir artefatos de acordo com o padr√£o, frequentemente citando varia√ß√µes e formas de ajustar a solu√ß√£o segundo as circunst√¢ncias. Inclui refer√™ncias a outras solu√ß√µes e o relacionamento com outros padr√µes de n√≠vel mais baixo ou mais alto.
 
-Em 1987, a partir dos conceitos criados por Alexander, os programadores Kent Beck e Ward Cunningham propuseram os primeiros padrıes de projeto para a ·rea da ciÍncia da computaÁ„o. Em um trabalho para a conferÍncia OOPSLA, eles apresentaram alguns padrıes para a construÁ„o de aplicaÁıes comerciais em linguagem Smalltalk.[5] Nos anos seguintes Beck, Cunningham e outros seguiram com o desenvolvimento destas ideias.
+Os patterns de Alexander procuravam prover uma fonte de ideias provadas para indiv√≠duos e comunidades para serem usadas em constru√ß√µes, mostrando assim o quanto belo, confort√°vel e flex√≠vel os ambientes podem ser constru√≠dos.
 
-PorÈm, o movimento ao redor de padrıes de projeto sÛ ganhou popularidade em 1995 quando foi publicado o livro Design Patterns: Elements of Reusable Object-Oriented Software. Os autores desse livro, Erich Gamma, Richard Helm, Ralph Johnson e John Vlissides, s„o conhecidos como a "Gangue dos Quatro" (Gang of Four) ou simplesmente "GoF".
+Em 1987, a partir dos conceitos criados por Alexander, os programadores Kent Beck e Ward Cunningham propuseram os primeiros padr√µes de projeto para a √°rea da ci√™ncia da computa√ß√£o. Em um trabalho para a confer√™ncia OOPSLA, eles apresentaram alguns padr√µes para a constru√ß√£o de aplica√ß√µes comerciais em linguagem Smalltalk.[5] Nos anos seguintes Beck, Cunningham e outros seguiram com o desenvolvimento destas ideias.
 
-Posteriormente, v·rios outros livros do estilo foram publicados, merecendo destaque Applying UML and Patterns: An Introduction to Object-Oriented Analysis and Design and Iterative Development, que introduziu um conjunto de padrıes conhecidos como GRASP (General Responsibility Assignment Software Patterns).
+Por√©m, o movimento ao redor de padr√µes de projeto s√≥ ganhou popularidade em 1995 quando foi publicado o livro Design Patterns: Elements of Reusable Object-Oriented Software. Os autores desse livro, Erich Gamma, Richard Helm, Ralph Johnson e John Vlissides, s√£o conhecidos como a "Gangue dos Quatro" (Gang of Four) ou simplesmente "GoF".
 
-## CaracterÌsticas de um padr„o de projeto
+Posteriormente, v√°rios outros livros do estilo foram publicados, merecendo destaque Applying UML and Patterns: An Introduction to Object-Oriented Analysis and Design and Iterative Development, que introduziu um conjunto de padr√µes conhecidos como GRASP (General Responsibility Assignment Software Patterns).
 
-Embora um padr„o seja a descriÁ„o de um problema, de uma soluÁ„o genÈrica e sua justificativa, isso n„o significa que qualquer soluÁ„o conhecida para um problema possa constituir um padr„o, pois existem caracterÌsticas obrigatÛrias que devem ser atendidas pelos padrıes:[3]
+## Caracter√≠sticas de um padr√£o de projeto
 
-1. Devem possuir um NOME, que descreva o problema, as soluÁıes e conseq¸Íncias. Um nome permite definir o vocabul·rio a ser utilizado pelos projetistas e desenvolvedores em um nÌvel mais alto de abstraÁ„o.
+Embora um padr√£o seja a descri√ß√£o de um problema, de uma solu√ß√£o gen√©rica e sua justificativa, isso n√£o significa que qualquer solu√ß√£o conhecida para um problema possa constituir um padr√£o, pois existem caracter√≠sticas obrigat√°rias que devem ser atendidas pelos padr√µes:[3]
 
-2. Todo padr„o deve relatar de maneira clara a qual (is) PROBLEMA(s) ele deve ser aplicado, ou seja, quais s„o os problemas que quando inserido em um determinado contexto o padr„o conseguir· resolve-lo.Alguns podendo exigir prÈ-condiÁıes.
+1. Devem possuir um NOME, que descreva o problema, as solu√ß√µes e conseq√ß√£ncias. Um nome permite definir o vocabul√°rio a ser utilizado pelos projetistas e desenvolvedores em um n√≠vel mais alto de abstra√ß√£o.
 
-3. SoluÁ„o descreve os elementos que compıem o projeto, seus relacionamentos, responsabilidades e colaboraÁıes. Um padr„o deve ser uma SOLU«√O concreta, ele deve ser exprimido em forma de gabarito (algoritmo) que, no entanto pode ser aplicado de maneiras diferentes.
+2. Todo padr√£o deve relatar de maneira clara a qual (is) PROBLEMA(s) ele deve ser aplicado, ou seja, quais s√£o os problemas que quando inserido em um determinado contexto o padr√£o conseguir√° resolve-lo.Alguns podendo exigir pr√©-condi√ß√µes.
 
-4. Todo padr„o deve relatar quais s„o as suas CONSEQU NCIAS para que possa ser analisada a soluÁ„o alternativa de projetos e para a compreens„o dos benefÌcios da aplicaÁ„o do projeto.
+3. Solu√ß√£o descreve os elementos que comp√µem o projeto, seus relacionamentos, responsabilidades e colabora√ß√µes. Um padr√£o deve ser uma SOLU√ß√£O concreta, ele deve ser exprimido em forma de gabarito (algoritmo) que, no entanto pode ser aplicado de maneiras diferentes.
 
-N„o pode ser considerado um padr„o de projeto trecho de cÛdigos especÌficos, mesmo que para o seu criador ele reflita um padr„o, que soluciona um determinado problema, porque os padrıes devem estar a um nÌvel maior de abstraÁ„o e n„o limitado a recursos de programaÁ„o. Um padr„o de projeto nomeia, abstrai e identifica os aspectos chaves de uma estrutura de projeto comum para torna-la ˙til para a criaÁ„o de um projeto orientado a objetos reutiliz·vel.[3]
+4. Todo padr√£o deve relatar quais s√£o as suas CONSEQU√äNCIAS para que possa ser analisada a solu√ß√£o alternativa de projetos e para a compreens√£o dos benef√≠cios da aplica√ß√£o do projeto.
 
-## Padrıes GoF ('Gang of Four')
+n√£o pode ser considerado um padr√£o de projeto trecho de c√≥digos espec√≠ficos, mesmo que para o seu criador ele reflita um padr√£o, que soluciona um determinado problema, porque os padr√µes devem estar a um n√≠vel maior de abstra√ß√£o e n√£o limitado a recursos de programa√ß√£o. Um padr√£o de projeto nomeia, abstrai e identifica os aspectos chaves de uma estrutura de projeto comum para torna-la √∫til para a cria√ß√£o de um projeto orientado a objetos reutiliz√°vel.[3]
 
-De acordo com o livro: "Padrıes de Projeto: soluÁıes reutiliz·veis de software orientado a objetos", os padrıes "GoF" s„o divididos em 24 tipos. Em funÁ„o dessa grande quantidade de padrıes, foi necess·rio classific·-los de acordo com as suas finalidades.
+## padr√µes GoF ('Gang of Four')
 
-S„o 3 as classificaÁıes/famÌlias:
+De acordo com o livro: "padr√µes de Projeto: solu√ß√µes reutiliz√°veis de software orientado a objetos", os padr√µes "GoF" s√£o divididos em 24 tipos. Em fun√ß√£o dessa grande quantidade de padr√µes, foi necess√°rio classific√°-los de acordo com as suas finalidades.
 
-- **Padrıes de criaÁ„o:** Os padrıes de criaÁ„o s„o aqueles que abstraem e/ou adiam o processo criaÁ„o dos objetos. Eles ajudam a tornar um sistema independente de como seus objetos s„o criados, compostos e representados. Um padr„o de criaÁ„o de classe usa a heranÁa para variar a classe que È instanciada, enquanto que um padr„o de criaÁ„o de objeto delegar· a instanciaÁ„o para outro objeto. Os padrıes de criaÁ„o tornam-se importantes ‡ medida que os sistemas evoluem no sentido de dependerem mais da composiÁ„o de objetos do que a heranÁa de classes. O desenvolvimento baseado na composiÁ„o de objetos possibilita que os objetos sejam compostos sem a necessidade de expor o seu interior como acontece na heranÁa de classe, o que possibilita a definiÁ„o do comportamento dinamicamente e a Ínfase desloca-se da codificaÁ„o de maneira rÌgida de um conjunto fixo de comportamentos, para a definiÁ„o de um conjunto menor de comportamentos que podem ser compostos em qualquer n˙mero para definir comportamentos mais complexos. H· dois temas recorrentes nesses padrıes. Primeiro todos encapsulam conhecimento sobre quais classes concretas s„o usadas pelo sistema. Segundo ocultam o modo como essas classes s„o criadas e montadas. Tudo que o sistema sabe no geral sobre os objetos È que suas classes s„o definidas por classes abstratas. Conseq¸entemente, os padrıes de criaÁ„o d„o muita flexibilidade no que È criado, quem cria, como e quando È criado. Eles permitem configurar um sistema com objetos ìprodutoî que variam amplamente em estrutura e funcionalidade. A configuraÁ„o pode ser est·tica (isto È, especificada em tempo de compilaÁ„o) ou din‚mica (em tempo de execuÁ„o).
-- **Padrıes estruturais:** Os padrıes estruturais se preocupam com a forma como classes e objetos s„o compostos para formar estruturas maiores. Os de classes utilizam a heranÁa para compor interfaces ou implementaÁıes, e  os de objeto descrevem maneiras de compor objetos para obter novas funcionalidades. A flexibilidade obtida pela composiÁ„o de objetos provÈm da capacidade de mudar a composiÁ„o em tempo de execuÁ„o o que n„o È possÌvel com a composiÁ„o est·tica (heranÁa de classes).
-- **Padrıes comportamentais:** Os padrıes de comportamento se concentram nos algoritmos e atribuiÁıes de responsabilidades entre os objetos. Eles n„o descrevem apenas padrıes de objetos ou de classes, mas tambÈm os padrıes de comunicaÁ„o entre os objetos. Os padrıes comportamentais de classes utilizam a heranÁa para distribuir o comportamento entre classes, e os padrıes de comportamento de objeto utilizam a composiÁ„o de objetos em contrapartida a heranÁa. Alguns descrevem como grupos de objetos que cooperam para a execuÁ„o de uma tarefa que n„o poderia ser executada por um objeto sozinho.
+S√£o 3 as classifica√ß√µes/fam√≠lias:
 
-Padrıes "GoF" organizados nas suas 3 classificaÁıes/famÌlias:
+- **padr√µes de cria√ß√£o:** Os padr√µes de cria√ß√£o s√£o aqueles que abstraem e/ou adiam o processo cria√ß√£o dos objetos. Eles ajudam a tornar um sistema independente de como seus objetos s√£o criados, compostos e representados. Um padr√£o de cria√ß√£o de classe usa a heran√ßa para variar a classe que √© instanciada, enquanto que um padr√£o de cria√ß√£o de objeto delegar√° a instancia√ß√£o para outro objeto. Os padr√µes de cria√ß√£o tornam-se importantes √© medida que os sistemas evoluem no sentido de dependerem mais da composi√ß√£o de objetos do que a heran√ßa de classes. O desenvolvimento baseado na composi√ß√£o de objetos possibilita que os objetos sejam compostos sem a necessidade de expor o seu interior como acontece na heran√ßa de classe, o que possibilita a defini√ß√£o do comportamento dinamicamente e a √™nfase desloca-se da codifica√ß√£o de maneira r√≠gida de um conjunto fixo de comportamentos, para a defini√ß√£o de um conjunto menor de comportamentos que podem ser compostos em qualquer n√∫mero para definir comportamentos mais complexos. H√° dois temas recorrentes nesses padr√µes. Primeiro todos encapsulam conhecimento sobre quais classes concretas s√£o usadas pelo sistema. Segundo ocultam o modo como essas classes s√£o criadas e montadas. Tudo que o sistema sabe no geral sobre os objetos √© que suas classes s√£o definidas por classes abstratas. Consequentemente, os padr√µes de cria√ß√£o d√£o muita flexibilidade no que √© criado, quem cria, como e quando √© criado. Eles permitem configurar um sistema com objetos ÔøΩprodutoÔøΩ que variam amplamente em estrutura e funcionalidade. A configura√ß√£o pode ser est√°tica (isto √©, especificada em tempo de compila√ß√£o) ou din√¢mica (em tempo de execu√ß√£o).
 
-- Padrıes de criaÁ„o
-	- Abstract Factory
-	- Object pool
-	- Builder
-	- Factory Method
-	- Prototype
-	- Singleton
+- **padr√µes estruturais:** Os padr√µes estruturais se preocupam com a forma como classes e objetos s√£o compostos para formar estruturas maiores. Os de classes utilizam a heran√ßa para compor interfaces ou implementa√ß√µes, e  os de objeto descrevem maneiras de compor objetos para obter novas funcionalidades. A flexibilidade obtida pela composi√ß√£o de objetos prov√©m da capacidade de mudar a composi√ß√£o em tempo de execu√ß√£o o que n√£o √© poss√≠vel com a composi√ß√£o est√°tica (heran√ßa de classes).
+- **padr√µes comportamentais:** Os padr√µes de comportamento se concentram nos algoritmos e atribui√ß√µes de responsabilidades entre os objetos. Eles n√£o descrevem apenas padr√µes de objetos ou de classes, mas tamb√©m os padr√µes de comunica√ß√£o entre os objetos. Os padr√µes comportamentais de classes utilizam a heran√ßa para distribuir o comportamento entre classes, e os padr√µes de comportamento de objeto utilizam a composi√ß√£o de objetos em contrapartida a heran√ßa. Alguns descrevem como grupos de objetos que cooperam para a execu√ß√£o de uma tarefa que n√£o poderia ser executada por um objeto sozinho.
 
-- Padrıes estruturais
-	- Private class data
-	- Adapter
-	- Bridge
-	- Composite
-	- Decorator
-	- FaÁade (ou Facade)
-	- Business Delegate
-	- Flyweight
-	- Proxy
+Padr√µes "GoF" organizados nas suas 3 classifica√ß√µes/fam√≠lias:
 
-- Padrıes comportamentais[3]
-	- Chain of Responsibility
-	- Command
-	- Interpreter
-	- Iterator
-	- Mediator
-	- Memento
-	- Observer
-	- State
-	- Strategy
-	- Template Method
-	- Visitor
+- Padr√µes de cria√ß√£o
+  - Abstract Factory
+  - Object pool
+  - Builder
+  - Factory Method
+  - Prototype
+  - Singleton
 
-Existem outros critÈrios de classificaÁ„o dos padrıes de projeto:
+- Padr√µes estruturais
+  - Private class data
+  - Adapter
+  - Bridge
+  - Composite
+  - Decorator
+  - FaÔøΩade (ou Facade)
+  - Business Delegate
+  - Flyweight
+  - Proxy
 
-- **Finalidade:** reflete o que um padr„o faz.
-- **Escopo:** especifica se o padr„o È aplicado ‡ classe ou objeto.
-- **Padrıes com escopo de classe:** utilizam a hierarquia para compor ou variar os objetos, mantendo a capacidade do sistema de se flexibilizar. Se realizarmos uma comparaÁ„o com o outro tipo de classificaÁ„o isso costuma acontecer quando se trata de um padr„o de criaÁ„o.
-- **Padrıes com escopo de objeto:** encontrados no relacionamento entre os objetos definidos em tempo de execuÁ„o. Realizando uma comparaÁ„o com o outro tipo de classificaÁ„o vemos que esses padrıes aparecem muito nos padrıes estruturais e comportamentais.
+- padr√µes comportamentais[3]
+  - Chain of Responsibility
+  - Command
+  - Interpreter
+  - Iterator
+  - Mediator
+  - Memento
+  - Observer
+  - State
+  - Strategy
+  - Template Method
+  - Visitor
+
+Existem outros crit√©rios de classifica√ß√£o dos padr√µes de projeto:
+
+- **Finalidade:** reflete o que um padr√£o faz.
+- **Escopo:** especifica se o padr√£o √© aplicado √† classe ou objeto.
+- **padr√µes com escopo de classe:** utilizam a hierarquia para compor ou variar os objetos, mantendo a capacidade do sistema de se flexibilizar. Se realizarmos uma compara√ß√£o com o outro tipo de classifica√ß√£o isso costuma acontecer quando se trata de um padr√£o de cria√ß√£o.
+- **padr√µes com escopo de objeto:** encontrados no relacionamento entre os objetos definidos em tempo de execu√ß√£o. Realizando uma compara√ß√£o com o outro tipo de classifica√ß√£o vemos que esses padr√µes aparecem muito nos padr√µes estruturais e comportamentais.
 
 [Artigo original](https://pt.wikipedia.org/wiki/Padr%C3%A3o_de_projeto_de_software)
